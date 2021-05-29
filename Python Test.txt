@@ -1,0 +1,32 @@
+list=[1,2,3,4,5];
+Result=0;
+for i in list:
+  Result=Result+i;
+print("Addition Of List Values=",Result)
+----------------------------------------------
+
+def dict_max():
+  dict_a={
+      "1": 50,
+      "2" : 60,
+      "3" : 70,
+      "4" :80,
+          }
+  max_value = max(dict_a, key=dict_a.get)  
+  print(max_value,":", dict_a[max_value])
+dict_max();
+-----------------------------------------------
+
+def continue_one():
+    count = 0 
+    result = 0 
+    arr=[0,0,0,1,1,1,0,0,0,1,1,0,1,1,1,1,0,0,1,1]
+    for i in arr:
+        if (i == 0):
+            count = 0
+        else:
+            count+= 1 
+            result = max(result, count) 
+    print("Consicutive Ones",result)
+  
+continue_one()
